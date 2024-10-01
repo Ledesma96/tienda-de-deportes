@@ -115,8 +115,8 @@ const Filters = ({openFilters, setOpenFilters}) => {
                     }
                 </div>
                 <div ref={ref2} className="acordeon">
-                    {subCategories.map(sc=>(
-                        <div>
+                    {subCategories.map((sc, index)=>(
+                        <div key={index}>
                             <input type="checkbox" name={sc} value={sc}/>
                             <label for={sc}>{sc}</label>
                         </div>
