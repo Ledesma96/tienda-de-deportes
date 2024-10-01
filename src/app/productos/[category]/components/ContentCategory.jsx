@@ -1,3 +1,4 @@
+'use client'
 import { getProductsByCategory } from "@/app/api/api";
 import { Card } from "@/app/components";
 import { useEffect, useState } from "react";

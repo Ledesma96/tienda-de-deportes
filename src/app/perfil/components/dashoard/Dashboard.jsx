@@ -1,5 +1,6 @@
 import { Mensajes, Orders, StockPanel } from "./components"
 
+
 const Dashboard = ({menu}) => {
     return (
         <div style={{width: "100%"}}>

@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useState } from "react";
 
 const ToOrder = ({openToOrder, setOpenToOrder, setAlf, setSort, alf, sort}) => {

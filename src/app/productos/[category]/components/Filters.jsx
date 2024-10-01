@@ -1,3 +1,4 @@
+'use client'
 import { getUniqueBrands, getUniqueSubCategory } from "@/app/api/api";
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
