@@ -1,6 +1,7 @@
 import Dashboard from "./dashoard/Dashboard";
 import ProfileUser from "./profile-user/ProfileUser";
-import { Content, Menu } from "./shared";
+import RenderProfile from "./RenderProfile";
+import { Menu } from "./shared";
 
-export { Content, Dashboard, Menu, ProfileUser };
+export { Dashboard, Menu, ProfileUser, RenderProfile };
 

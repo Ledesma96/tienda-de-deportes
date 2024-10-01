@@ -1,3 +1,4 @@
+'use client'
 import { getAllOrders } from '@/app/api/api';
 import { formateDate } from '@/app/helpers';
 import Link from 'next/link';

@@ -1,3 +1,6 @@
-import Content from "./Content";
+import ContentContainer from "./ContentContainer";
+import Item from "./Item";
+import RenderMyPurchases from "./RenderMyPurchases";
 
-export { Content };
+export { ContentContainer, Item, RenderMyPurchases };
+

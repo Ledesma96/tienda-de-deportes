@@ -1,3 +1,4 @@
+'use client'
 import { getAllShopping } from "@/app/api/api";
 import Link from "next/link";
 import { useEffect, useState } from "react";

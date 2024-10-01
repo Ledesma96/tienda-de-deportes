@@ -1,9 +1,12 @@
+'use client'
 import { getShoppingById } from '@/app/api/api'
 import { useEffect, useState } from 'react'
-import Item from './Item'
+import { Item } from '.'
 
-const Content = ({id}) => {
+const ContentContainer = ({id}) => {
     const [item, setItem] = useState({})
+    console.log(id);
+    
 
     useEffect(() => {
         const fetchItem = async() => {
@@ -27,4 +30,4 @@ const Content = ({id}) => {
     )
 }
 
-export default Content
+export default ContentContainer
