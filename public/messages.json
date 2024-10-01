@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name": "Ricardo Arjona",
+        "email": "ricardo@gmail.com",
+        "phone": "1125487596",
+        "message": "Buenos dias, tienen precios al por mayor?",
+        "date": "2024-09-26T10:00:00Z",
+        "seen": false
+    },
+    {
+        "id": 2,
+        "name": "María López",
+        "email": "maria.lopez@hotmail.com",
+        "phone": "1165427896",
+        "message": "Me gustaría saber si hacen envíos internacionales.",
+        "date": "2024-09-26T11:15:00Z",
+        "seen": true
+    },
+    {
+        "id": 3,
+        "name": "Carlos Gómez",
+        "email": "carlosgomez@yahoo.com",
+        "phone": "1134578923",
+        "message": "¿Puedo hacer un pedido personalizado?",
+        "date": "2024-09-26T12:30:00Z",
+        "seen": false
+    },
+    {
+        "id": 4,
+        "name": "Luciana Fernández",
+        "email": "luciana.fernandez@gmail.com",
+        "phone": "1147856921",
+        "message": "Hola, ¿cuál es el horario de atención de su tienda?",
+        "date": "2024-09-26T13:45:00Z",
+        "seen": true
+    },
+    {
+        "id": 5,
+        "name": "Jorge Martínez",
+        "email": "jorge.martinez@outlook.com",
+        "phone": "1153698745",
+        "message": "¿Tienen algún descuento por compras grandes?",
+        "date": "2024-09-26T14:00:00Z",
+        "seen": false
+    },
+    {
+        "id": 6,
+        "name": "Ana Pérez",
+        "email": "ana.perez@mail.com",
+        "phone": "1178564321",
+        "message": "Estoy buscando productos específicos, ¿pueden ayudarme?",
+        "date": "2024-09-26T15:15:00Z",
+        "seen": true
+    },
+    {
+        "id": 7,
+        "name": "Santiago Rodríguez",
+        "email": "santiago.rod@gmail.com",
+        "phone": "1123546987",
+        "message": "¿Cómo puedo realizar una devolución?",
+        "date": "2024-09-26T16:30:00Z",
+        "seen": false
+    },
+    {
+        "id": 8,
+        "name": "Laura García",
+        "email": "laura.garcia@mail.com",
+        "phone": "1165843219",
+        "message": "¿Tienen tienda física o solo en línea?",
+        "date": "2024-09-26T17:45:00Z",
+        "seen": true
+    }
+]
+

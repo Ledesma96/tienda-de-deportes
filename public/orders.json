@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "buyerName": "Carlos Pérez",
+        "email": "carlos.perez@gmail.com",
+        "phone": "1123456789",
+        "items": [
+            {
+                "itemName": "Camiseta Deportiva",
+                "quantity": 2,
+                "pricePerUnit": 25.50
+            },
+            {
+                "itemName": "Zapatillas Running",
+                "quantity": 1,
+                "pricePerUnit": 75.00
+            }
+        ],
+        "totalPrice": 126.00,
+        "purchaseDate": "2024-09-25T14:30:00Z",
+        "paymentMethod": "Tarjeta de crédito",
+        "status": "Completado",
+        "hasShipping": true,
+        "shippingAddress": {
+            "street": "Calle Falsa 123",
+            "city": "Buenos Aires",
+            "postalCode": "C1000",
+            "country": "Argentina"
+        }
+    },
+    {
+        "id": 2,
+        "buyerName": "María García",
+        "email": "maria.garcia@hotmail.com",
+        "phone": "1165439876",
+        "items": [
+            {
+                "itemName": "Sudadera Unisex",
+                "quantity": 1,
+                "pricePerUnit": 45.00
+            }
+        ],
+        "totalPrice": 45.00,
+        "purchaseDate": "2024-09-26T09:45:00Z",
+        "paymentMethod": "PayPal",
+        "status": "Pendiente",
+        "hasShipping": false,
+        "shippingAddress": null
+    },
+    {
+        "id": 3,
+        "buyerName": "Lucía Fernández",
+        "email": "lucia.fernandez@mail.com",
+        "phone": "1147859632",
+        "items": [
+            {
+                "itemName": "Chaqueta de Cuero",
+                "quantity": 1,
+                "pricePerUnit": 120.00
+            },
+            {
+                "itemName": "Bufanda de Lana",
+                "quantity": 3,
+                "pricePerUnit": 20.00
+            }
+        ],
+        "totalPrice": 180.00,
+        "purchaseDate": "2024-09-26T12:10:00Z",
+        "paymentMethod": "Transferencia bancaria",
+        "status": "Completado",
+        "hasShipping": true,
+        "shippingAddress": {
+            "street": "Av. Las Heras 2450",
+            "city": "Mendoza",
+            "postalCode": "M5500",
+            "country": "Argentina"
+        }
+    },
+    {
+        "id": 4,
+        "buyerName": "Juan Rodríguez",
+        "email": "juan.rodriguez@yahoo.com",
+        "phone": "1136549872",
+        "items": [
+            {
+                "itemName": "Mochila Escolar",
+                "quantity": 2,
+                "pricePerUnit": 30.00
+            }
+        ],
+        "totalPrice": 60.00,
+        "purchaseDate": "2024-09-26T15:20:00Z",
+        "paymentMethod": "Efectivo",
+        "status": "Completado",
+        "hasShipping": false,
+        "shippingAddress": null
+    },
+    {
+        "id": 5,
+        "buyerName": "Sofía Martínez",
+        "email": "sofia.martinez@outlook.com",
+        "phone": "1167895432",
+        "items": [
+            {
+                "itemName": "Vestido de Verano",
+                "quantity": 1,
+                "pricePerUnit": 50.00
+            }
+        ],
+        "totalPrice": 50.00,
+        "purchaseDate": "2024-09-26T17:00:00Z",
+        "paymentMethod": "Tarjeta de débito",
+        "status": "Completado",
+        "hasShipping": true,
+        "shippingAddress": {
+            "street": "Calle Mitre 950",
+            "city": "Rosario",
+            "postalCode": "S2000",
+            "country": "Argentina"
+        }
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {"id":"aserf421as4as1d4", "date": "02/01/2024", "products":[
+        {"name": "Camiseta Boca Juniors Adidas Titular","thumbnail":"https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw12b25056/products/ADIV1922/ADIV1922-1.JPG", "quantity": 1, "price": 69999},
+        {"name": "Campera Running Nike Windrunner", "thumbnail":"https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw7eb2cee4/products/NIFB7540-010/NIFB7540-010-1.JPG", "quantity": 2, "price": 75125}
+    ], "total" : 220249},
+    {"id":"afgerf421as4as1d4", "date": "02/01/2024", "products":[
+        {"name": "Campera Outdoor Adidas Terrex Multi Light Down", "thumbnail": "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwdf5dd1bb/products/ADIP3543/ADIP3543-1.JPG", "quantity": 1, "price": 194399},
+        {"name": "Short Entrenamiento Lotto Active Msp Cross Mujer", "thumbnail":"https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwbe29332c/products/LONISS230133/LONISS230133-1.JPG", "quantity": 2, "price": 20900}
+    ], "total" : 236199},
+    {"id":"a32serf421as4as1d4", "date": "02/01/2024", "products":[
+        {"name": "Conjunto Under Armour Tricot Tracksuit", "thumbnail":"https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw97edd352/products/UA1365147-001/UA1365147-001-1.JPG", "quantity": 1, "price": 101020},
+        {"name": "Remera Topper Running Up", "thumbnail":"https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw607ff1c3/products/TO_163660/TO_163660-1.JPG", "quantity": 3, "price": 17999}
+    ], "total" : 155017}
+]
