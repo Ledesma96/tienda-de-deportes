@@ -93,8 +93,8 @@ const Filters = ({openFilters, setOpenFilters}) => {
                     }
                 </div>
                 <div ref={ref1} className="acordeon">
-                    {brands.map(brand =>(
-                        <div>
+                    {brands.map((brand, index) =>(
+                        <div key={index}>
                             <input type="checkbox" name={brand} value={brand}/>
                             <label for={brand}>{brand}</label>
                         </div>
