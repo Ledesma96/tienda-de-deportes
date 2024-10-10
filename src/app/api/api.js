@@ -1,5 +1,10 @@
 import axios from "axios";
 
+export const getAllProducts = async () => {
+    const response = await axios.get('/api.json');
+    return response.data;
+}
+
 export const loginApi = async(user) => {
     const users = await axios.get('/users.json');
     console.log(users);

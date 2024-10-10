@@ -24,9 +24,11 @@ export default function RootLayout({ children }) {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
       <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Monoton&display=swap" rel="stylesheet"/>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/react-modal/3.14.3/react-modal.min.js"
-   integrity="sha512-MY2jfK3DBnVzdS2V8MXo5lRtr0mNRroUI9hoLVv2/yL3vrJTam3VzASuKQ96fLEpyYIT4a8o7YgtUs5lPjiLVQ=="
-   crossorigin="anonymous"
-   referrerpolicy="no-referrer" async></script> 
+        integrity="sha512-MY2jfK3DBnVzdS2V8MXo5lRtr0mNRroUI9hoLVv2/yL3vrJTam3VzASuKQ96fLEpyYIT4a8o7YgtUs5lPjiLVQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" async>
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
       </head>
       <body className={inter.className} style={{overflowX:"hidden"}}>
         <Providers>

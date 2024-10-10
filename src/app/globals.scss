@@ -16,6 +16,12 @@ body{
   overflow-x: hidden;
 }
 
+.notify{
+  z-index: 99999;
+}
+
+
+
 //Breadcrumbs component
 .container-breadcrumbs{
   padding-top: 8px;
@@ -220,7 +226,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 9;
 
     p{
       width: 100%;
@@ -279,6 +285,7 @@ body{
 }
 //content component
 .container-main{
+  width: 100%;
   margin-top: 16px;
   display: flex;
   flex-direction: column;
@@ -292,6 +299,7 @@ body{
     text-align: center;
   }
   section{
+    width: 100%;
     div{
       width: 100%;
       .sub_title{
@@ -303,6 +311,82 @@ body{
         border-bottom: 0.5px solid $color-primary;
       }
       
+    }
+  }
+  .slider-container {
+    margin-top: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    .slider-header{
+      padding: 0px 64px;
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .category{
+        position: relative;
+        color: gray;
+        &::first-letter{
+          text-transform: uppercase;
+        }
+        &::after{
+          position: absolute;
+          content: '';
+          bottom: 0;
+          left: 12px;
+          width: 80%;
+          height: 0.5px;
+          background-color: rgb(163, 163, 163);
+        }
+      }
+      a{
+        color: black;
+        p{
+          letter-spacing: 2px;
+          color: gray;
+        }
+      }
+    }
+    .arrow-left, .arrow-right {
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      opacity: 0.5;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+    .arrow-left {
+      left: 10px;
+    }
+    .arrow-right {
+      right: 10px;
+    }
+    .slider-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      .slider-content {
+        position: absolute;
+        height: 100%;
+        width: auto;
+        top: 0;
+        left: 0;
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
     }
   }
 }
@@ -939,6 +1023,7 @@ body{
 
 //Cart component
 
+
 .cart{
   position: absolute;
   top: 0;
@@ -946,8 +1031,8 @@ body{
   justify-content: flex-end;
   width: 100vw;
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 999999;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
   .container-cart{
     width: 85%;
     min-height: 100vh;
@@ -955,6 +1040,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+
+    .empty-cart{
+      margin-top: 32px;
+    }
     .cancel{
       display: block;
       width: 100%;
@@ -1154,6 +1244,131 @@ body{
   }
 }
 
+//buy
+  //render page
+.container-buy{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .header{
+    padding: 8px 0px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(163, 162, 162);
+  }
+  .form-personal, .form-submission{
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    margin: auto;
+    margin-top: 32px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    border: 0.5px solid rgb(163, 162, 162);
+    h2{
+      width: 50%;
+      height: 20px;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      font-size: 1.1rem;
+      text-align: center;
+      background-color: white;
+    }
+    div{
+      margin-bottom: 16px;
+      position: relative;
+      width: 90%;
+      height: 40px;
+      label{
+        padding: 0px 4px;
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translate(0%, -50%);
+        height: 20px;
+        background-color: white;
+        color: rgb(66, 66, 66);
+        transition: all 0.3s ease-in-out;
+      }
+      input, textarea{
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+        border: none;
+        margin-bottom: 16px;
+        border: 0.5px solid rgb(163, 162, 162);
+        &:focus{
+          outline: none;
+        }
+      }
+      textarea{
+        padding-top: 10px;
+      }
+      &:focus-within label {
+        top: 0px;
+        font-size: 12px;
+        transition: all 0.3s ease-in-out;
+      }
+      .label-up{
+        top: 0px;
+        font-size: 12px;
+      }
+    }
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 20px 0;
+  
+    .continue-button, .cancel-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: #45a049;
+      }
+  
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+    }
+  
+    .cancel-button {
+      background-color: #f44336;
+  
+      &:hover {
+        background-color: #d32f2f; // Color más oscuro al pasar el mouse
+      }
+  
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+      }
+    }
+  }
+  
+}
+
 
 
 @media (width >= 768px) {
@@ -1171,10 +1386,12 @@ body{
   }
   //footer compnent
   .container-footer{
-    height: 300px;
+    height: auto;
+    gap: 0px;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 95% 5%;
+    grid-template-rows: 90% 10%;
     section{
       width: 100%;
       display: flex;
@@ -1202,10 +1419,11 @@ body{
       grid-row: 1;
     }
     p{
+      margin-top: -16px;
       grid-column: 1/span 3;
       grid-row: 2;
       text-align: center;
-      padding-bottom: 16px;
+      margin-bottom:32px;
     }
   }
 

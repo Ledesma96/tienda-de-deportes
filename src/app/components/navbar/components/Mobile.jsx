@@ -36,7 +36,7 @@ const Mobile = ({setOpenCart}) => {
                 <Link href={`${user ? "/perfil" : "/auth"}`}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"  viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        <path fillRule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                     </svg>
                 </Link>
                 <div onClick={() => setOpenCart(true)}>
@@ -94,7 +94,7 @@ const Mobile = ({setOpenCart}) => {
                                 transition: "height 0.2s ease",
                             }}>
                             <div>
-                                <Link href="/productos/niño" onClick={toggleMenu}>NIÑO</Link>
+                                <Link href="/productos/kids" onClick={toggleMenu}>KIDS</Link>
                                 <svg onClick={() => toggleAcrodeon('acordeon3')} xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
                                     <path fillRule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
                                 </svg>

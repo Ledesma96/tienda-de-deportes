@@ -1,13 +1,16 @@
 'use client'
+import { showNotify, ToastNotification } from "@/app/helpers"
 import { removeFromCart, selectCartTotal } from "@/redux/reducers"
+import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 
 const Cart = ({setOpenCart, openCart}) => {
-    const dispatch = useDispatch()
-    const cart = useSelector(state => state.cart)
-    const total = useSelector(selectCartTotal)
-    const [products, setProducts] = useState([])
+    const router = useRouter()
+    const dispatch = useDispatch();
+    const cart = useSelector(state => state.cart);
+    const total = useSelector(selectCartTotal);
+    const [products, setProducts] = useState([]);
 
     useEffect(() => {
         setProducts(cart)
@@ -19,6 +22,16 @@ const Cart = ({setOpenCart, openCart}) => {
 
     const deleteToCart = (id) => {
         dispatch(removeFromCart(id))
+        ToastNotification('success', 'Producto eliminado')
+    }
+
+    const buy = () => {
+        if(cart.length === 0){
+            showNotify('Carrito vacio!')
+        }
+        else{
+            router.push('/buy')
+        }
     }
 
     return(
@@ -26,6 +39,9 @@ const Cart = ({setOpenCart, openCart}) => {
             <aside className="container-cart">
                 <span className="cancel" onClick={() => setOpenCart(false)}>X</span>
                 <h2 className="cart-title">CARRITO</h2>
+                {cart.length === 0 &&
+                    <p className="empty-cart">No hay productos en el carrito.</p>
+                }
                 <div>
                     {products.map((product) => (
                         <div className="card-cart" key={product.id}>
@@ -42,7 +58,7 @@ const Cart = ({setOpenCart, openCart}) => {
                 </div>
                 <div className="container-btn">
                     <p className="total">Total: ${formatNumberWithDots(total)}</p>
-                    <button>COMPRAR</button>
+                    <button onClick={buy}>COMPRAR</button>
                     <button>CANCELAR</button>
                 </div>
             </aside>

@@ -22,7 +22,7 @@ const Desktop = ({setOpenCart}) => {
         { label: "Inicio", href: "/", acordeon: false },
         { label: "Hombre", href: "/productos/hombre", acordeon: true, acordeonName:"acorden1", subLinks: ["Calzado", "Remeras", "Pantalones"] },
         { label: "Mujer", href: "/productos/mujer", acordeon: true, acordeonName:"acorden2", subLinks: ["Calzado", "Remeras", "Pantalones"] },
-        { label: "Niño", href: "/productos/niños", acordeon: true, acordeonName:"acorden3", subLinks: ["Calzado", "Remeras", "Pantalones"] },
+        { label: "Kids", href: "/productos/kids", acordeon: true, acordeonName:"acorden3", subLinks: ["Calzado", "Remeras", "Pantalones"] },
         { label: "Contacto", href: "/contacto", acordeon: false },
         { label: isValidUser ? (user.role == "admin" ? "dashboard" : "perfil") : "Iniciar sesión", href: isValidUser ? "/perfil" :  "/auth", acordeon: false }
     ];

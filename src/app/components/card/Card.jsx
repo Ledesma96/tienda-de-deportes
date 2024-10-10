@@ -1,12 +1,14 @@
 'use client'
 import { addCart } from "@/app/api/api";
+import { ToastNotification } from "@/app/helpers";
 import { addToCart } from "@/redux/reducers";
 import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import { useDispatch } from "react-redux";
 import SkeletonCard from "./SkeletonCard";
 
-const Card = ({ data, count }) => {
+const Card = ({ data, count, styles }) => {
+    
     const dispatch = useDispatch();
 
     function formatNumberWithDots(number) {
@@ -17,13 +19,14 @@ const Card = ({ data, count }) => {
         const response = await addCart(id, 1)
         if(response){
             dispatch(addToCart(response))
+            ToastNotification('success', 'Producto agregado')
         }
     }
     return (
         <>
             {data ?
-                <div className="card-container">
-                    {data.map((card) => (
+                <div className="card-container" style={styles}>
+                    {data?.map((card) => (
                         <div className="card" key={card.id}>
                             <Fade>
                                 <Link href={`/detalles/${card.id}`} className="card-image">
@@ -32,7 +35,7 @@ const Card = ({ data, count }) => {
                                 <div className="card-content">
                                     <h2 className="card-title">{card.name}</h2>
                                     <p>${formatNumberWithDots(card.price)}</p>
-                                    <button className="card-button" onClick={() => addProducToCart(card.id)}>Agregar al crrito</button>
+                                    <button className="card-button" onClick={() => addProducToCart(card.id)}>Agregar al carrito</button>
                                 </div>
                             </Fade>
                         </div>

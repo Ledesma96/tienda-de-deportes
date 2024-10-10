@@ -42,13 +42,13 @@ const Footer = () => {
                     <Link href="/">
                         <p><span>{'>'}</span>INICIO</p>
                     </Link>
-                    <Link href="">
+                    <Link href="/productos/hombre">
                         <p><span>{'>'}</span>HOMBRES</p>
                     </Link>
-                    <Link href="">
+                    <Link href="/productos/mujer">
                         <p><span>{'>'}</span>MUEJERES</p>
                     </Link>
-                    <Link href="">
+                    <Link href="/productos/niños">
                         <p><span>{'>'}</span>NIÑOS</p>
                     </Link>
                 </div>
