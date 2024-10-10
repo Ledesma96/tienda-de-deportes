@@ -88,7 +88,7 @@ const Sliders = ({category}) => {
                 </svg>
             </button>
             <div className="slider-wrapper" ref={sliderWaper}>
-                <div ref={data && sliderContent} className="slider-content" style={{ transform: `translateX(-${currentIndex * 300}px)`}}>
+                <div ref={data && sliderContent} className="slider-content" style={{ transform: `translateX(-${currentIndex * 316}px)`}}>
                     <Card data={data} count={5} styles={styles} />
                 </div>
                 <div className='container-more'>
